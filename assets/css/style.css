@@ -49,6 +49,7 @@ a {
 .header {
     background: #E6F0FF;
     height: 100vh;
+    position: relative;
 }
 
 .navbar {
@@ -123,3 +124,9 @@ a {
     margin-top: 40px;
     min-width: 170px;
 } 
+
+.hero-img {
+    position: absolute;
+    right: calc((100vw - 1110px) / 2 - 100px);
+    bottom: 0;
+}
