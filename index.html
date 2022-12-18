@@ -7,12 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Landing Page</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"> -->
+    <link rel="stylesheet" href=". /assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum perferendis atque et ex non voluptatibus unde at, porro quaerat odio!</p>
+    <!-- thẻ main khác thẻ div nói lên ngữ nghĩa của trang  -->
+    <main>
+        <!-- Header -->
+        <header class="header">
+            <div class="content">
+                <nav class="navbar">
+                    <!-- logo -->
+                    <img src="./assets/img/logo.svg" alt="Besnik.">
+
+                    <!-- navigation -->
+                    <!-- nên để display: flex, khi đó các chữ lên một hàng sẽ không bị cách nhau bởi một khoảng trắng
+                        do dùng display: inline-block, khoảng trắng đó là dấu xuống hàng của mỗi thẻ li
+                    -->
+                    <ul>
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="#!">Features</a></li>
+                        <li><a href="#!">Services</a></li>
+                        <li><a href="#!">Resources</a></li>
+                        <li><a href="#!">Contact</a></li>
+                    </ul>
+
+                    <!-- registration -->
+                    <div class="registration">
+                        <a href="#!" class="action-link">Sign in</a>
+                        <a href="#!" class="btn action-btn">Sign up</a>
+                    </div>
+                </nav>
+                <div class="hero">
+                    <div class="info">
+                        <p class="sub-title">Welcome to Besnik Agency</p>
+                        <h1 class="title">Discover a place
+                            you'll love to live.
+                        </h1>
+                        <p class="desc">Get the best real estate deals first,
+                            before they hit the mass market! HOT FORECLOSURE DEALS with one simple search.
+                        </p>
+                        <a href="" class="btn about-us">More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
 </body>
 
 </html>
