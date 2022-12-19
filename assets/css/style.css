@@ -16,7 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* Common */
+/*============ Common ==============*/
 a {
     text-decoration: none;
 }
@@ -24,7 +24,7 @@ a {
 .btn {
     min-width: 98px;
     background: var(--primary-color);
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 21px;
@@ -32,6 +32,10 @@ a {
     color: #FFFFFF;
     display: inline-block;
     padding: 14.5px 16px;
+}
+
+.btn-170 {
+    min-width: 170px;
 }
 
 .btn:hover {
@@ -48,7 +52,7 @@ a {
 /* header */
 .header {
     background: #E6F0FF;
-    height: 100vh;
+    height: 736px;
     position: relative;
 }
 
@@ -86,6 +90,7 @@ a {
 .registration .action-btn {
     padding: 9.5px 16px;
     margin-left: 18px;
+    border-radius: 8px;
 }
 
 .hero {
@@ -123,10 +128,135 @@ a {
 .about-us {
     margin-top: 40px;
     min-width: 170px;
-} 
+}
 
 .hero-img {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
+}
+
+/*============ Client ==============*/
+
+.client {
+    margin-top: 122px;
+}
+
+.client .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #7D8589;
+    margin-top: 23px;
+}
+
+.client .client-trust {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client .client-trusts .amazon-img {
+    border: 1px solid #ccc;
+}
+
+/*============ Guides ==============*/
+
+.guide {
+    margin-top: 174px;
+}
+
+.guide .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+    position: relative;
+}
+
+.guide .sub-title::before {
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guide .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    text-align: center;
+    color: #5A6473;
+    width: 459px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.list-guides {
+    margin-top: 70px;
+}
+
+.guide .list-guides {
+    display: flex;
+    justify-content: center;
+}
+
+
+.list-guides .icon {
+    margin-bottom: 26px;
+}
+
+.list-guides .item-guide {
+    padding: 0 70px;
+    text-align: center;
+}
+
+.list-guides .item-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.10;
+    color: #3B3C45;
+}
+
+.list-guides .buy-guide {
+    margin-bottom: 10px;
+}
+
+.list-guides .buy-guide .how-to {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #0689FF;
+}
+
+.list-guides .item-guide .arrow {
+    margin-left: 5px;
+}
+
+.guide .sell-full {
+    margin-top: 50px;
+    display: flex;
+}
+
+.guide .sell-full a {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #FFFFFF;
 }
