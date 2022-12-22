@@ -6,9 +6,12 @@
     --primary-color: #0F1B4C;
 }
 
+html , body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
-
 }
 
 body {
@@ -69,7 +72,7 @@ a {
     background: #E6F0FF;
     padding-top: 26px;
     position: sticky;
-    top: 0;
+    top: -26px;
     z-index: 1;
 }
 
