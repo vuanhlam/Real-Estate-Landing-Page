@@ -36,11 +36,11 @@
                         do dùng display: inline-block, khoảng trắng đó là dấu xuống hàng của mỗi thẻ li
                     -->
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#featured">Features</a></li>
-                        <li><a href="#resource">Resources</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="menu-nav active" href="#">Home</a></li>
+                        <li><a class="menu-nav" href="#services">Services</a></li>
+                        <li><a class="menu-nav" href="#featured">Features</a></li>
+                        <li><a class="menu-nav" href="#resource">Resources</a></li>
+                        <li><a class="menu-nav" href="#contact">Contact</a></li>
                     </ul>
 
                     <!-- registration -->
@@ -424,7 +424,15 @@
     </main>
 
     <script>
-        const $ = document.querySelector('');
+        const navBtn = document.querySelectorAll('.menu-nav');
+
+        navBtn.forEach(function(item) {
+            item.onclick = function(e) {
+                document.querySelector('.menu-nav.active').classList.remove('active');   
+                item.classList.add('active');
+            }
+        })
+
     </script>
 </body>
 
